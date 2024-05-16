@@ -17,6 +17,6 @@ function generateGreeting(name) {
 }
 
 // Set the greeting in the HTML element with the id "greeting"
-const name = "Hitarth"; // Replace with the desired name
+const name = "gavg"; // Replace with the desired name
 const greetingElement = document.getElementById("greeting");
 greetingElement.textContent = generateGreeting(name);

@@ -1,21 +1,95 @@
 function showTables(buttonNumber) {
-  // Hide all tables
-  for (let i = 1; i <= 8; i++) {
-    document.getElementById(`table${i}`).classList.add("hidden");
-  }
+  // Fetch data from the json file
+  fetch('../links.json')
+    .then(response => response.json())
+    .then(data => {
+      // Create a class of the list links
+      class List {
+        constructor(title, link, table) {
+          this.title = title;
+          this.link = link;
+          this.table = table;
+        }
+      }
 
-  // Show tables based on the button clicked
-  if (buttonNumber === 1) {
-    document.getElementById("table1").classList.remove("hidden");
-    document.getElementById("table2").classList.remove("hidden");
-  } else if (buttonNumber === 2) {
-    document.getElementById("table3").classList.remove("hidden");
-    document.getElementById("table4").classList.remove("hidden");
-  } else if (buttonNumber === 3) {
-    document.getElementById("table5").classList.remove("hidden");
-    document.getElementById("table6").classList.remove("hidden");
-  } else if (buttonNumber === 4) {
-    document.getElementById("table7").classList.remove("hidden");
-    document.getElementById("table8").classList.remove("hidden");
-  }
+      // Clear the selected tab
+      document.getElementById("table_button1").classList.remove("bg-secondary");
+      document.getElementById("table_button1").classList.remove("text-black");
+      document.getElementById("table_button2").classList.remove("bg-secondary");
+      document.getElementById("table_button2").classList.remove("text-black");
+      document.getElementById("table_button3").classList.remove("bg-secondary");
+      document.getElementById("table_button3").classList.remove("text-black");
+      document.getElementById("table_button4").classList.remove("bg-secondary");
+      document.getElementById("table_button4").classList.remove("text-black");
+
+      // Set the selected tab
+      switch (buttonNumber) {
+        case 0:
+          document.getElementById("table_button1").classList.add("bg-secondary");
+          document.getElementById("table_button1").classList.add("text-black");
+          break;
+        case 1:
+          document.getElementById("table_button2").classList.add("bg-secondary");
+          document.getElementById("table_button2").classList.add("text-black");
+          break;
+        case 2:
+          document.getElementById("table_button3").classList.add("bg-secondary");
+          document.getElementById("table_button3").classList.add("text-black");
+          break;
+        case 3:
+          document.getElementById("table_button4").classList.add("bg-secondary");
+          document.getElementById("table_button4").classList.add("text-black");
+          break;
+      }
+
+      // Create an array to store the list links
+      var selected_List = [];
+
+      // Loop through the data and store the selected list links
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].table === buttonNumber) {
+          selected_List.push(new List(data[i].title, data[i].link, data[i].table));
+        }
+      }
+
+      // Clear the innerHTML of the test element
+      document.getElementById("test").innerHTML = "";
+
+      // Loop through the selected list links and display them
+      for (let i = 0; i < selected_List.length; i++) {
+        document.getElementById("test").innerHTML += "<a href='" + selected_List[i].link + "'>" + selected_List[i].title + "</a><br>";
+      }
+    });
+}
+
+window.onload = function() {
+  fetch('../links.json')
+    .then(response => response.json())
+    .then(data => {
+      // Create a class of the list links
+      class List {
+        constructor(title, link, table) {
+          this.title = title;
+          this.link = link;
+          this.table = table;
+        }
+      }
+
+      document.getElementById("table_button1").classList.add("bg-secondary");
+      document.getElementById("table_button1").classList.add("text-black");
+
+      var selected_List = [];
+
+      // Loop through the data and store the selected list links
+      for (let i = 0; i < data.length; i++) {
+        if (data[i].table === 0) {
+          selected_List.push(new List(data[i].title, data[i].link, data[i].table));
+        }
+      }
+
+      // Loop through the selected list links and display them
+      for (let i = 0; i < selected_List.length; i++) {
+        document.getElementById("test").innerHTML += "<a href='" + selected_List[i].link + "'>" + selected_List[i].title + "</a><br>";
+      }
+    });
 }
