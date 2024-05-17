@@ -1,6 +1,7 @@
+
 function showTables(buttonNumber) {
   // Fetch data from the json file
-  fetch('/src_js/links.json')
+  fetch('https://gavg0.github.io/firefox-startpage/src_js/links.json')
     .then(response => response.json())
     .then(data => {
       // Create a class of the list links
@@ -63,7 +64,7 @@ function showTables(buttonNumber) {
 }
 
 window.onload = function() {
-  fetch('/src_js/links.json')
+  fetch('https://gavg0.github.io/firefox-startpage/src_js/links.json')
     .then(response => response.json())
     .then(data => {
       // Create a class of the list links
