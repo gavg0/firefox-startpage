@@ -1,6 +1,6 @@
 function showTables(buttonNumber) {
   // Fetch data from the json file
-  fetch('./links.json')
+  fetch('/src_js/links.json')
     .then(response => response.json())
     .then(data => {
       // Create a class of the list links
