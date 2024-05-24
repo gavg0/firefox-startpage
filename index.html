@@ -13,6 +13,17 @@
   </head>
 
   <body>
+    <div class="w-screen text-end p-2">
+    <div class="dropdown dropdown-hover dropdown-end">
+      <div tabindex="0" role="button" class="btn btn-neutral">Theme</div>
+      <ul tabindex="0" class="menu dropdown-content z-[1] shadow bg-base-100 rounded-box w-52">
+        <li> <button data-set-theme="catppuccin-latte">Latté</button></li>
+        <li> <button data-set-theme="catppuccin-frappe">Frappé</button></li>
+        <li> <button data-set-theme="catppuccin-macchiato">Macchiato</button></li>
+        <li> <button data-set-theme="catppuccin-mocha">Mocha</button></li>
+      </ul>
+    </div>
+    </div>
   <div class="text-center my-24">
     <span id="time" class="text-7xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-center poppins"></span>
     <span id="date"></span>
@@ -23,35 +34,41 @@
         <button id="toggleButton" onclick="toggleText()" class="hidden">
         </button>
         <form id="text1" action="https://www.google.com/search?client=firefox-b-d&q=" method="get">
-          <label class="input input-bordered input-lg flex items-center gap-2">
+          <label class="input input-bordered max-w-7xl input-lg flex items-center gap-2 rounded-3xl ">
             <input class="tsb" type="text" name="q" placeholder="Search..." />
           </label>
         </form>
     </div>
 
     <div class="tabs tabs-boxed mx-auto flex gap-1 p-2 mt-12">
-      <button id="table_button1" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-300" onclick="showTables(0)" data-act-class="tab-active" class="tab">Daily</button>
-      <button id="table_button2" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-300" onclick="showTables(1)" data-act-class="tab-active" class="tab">School</button>
-      <button id="table_button3" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-300" onclick="showTables(2)" data-act-class="tab-active" class="tab">Frontend</button>
-      <button id="table_button4" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-300" onclick="showTables(3)" data-act-class="tab-active" class="tab">Backend</button>
+      <button id="table_button1" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-500" onclick="showTables(0)" data-act-class="tab-active" class="tab">Daily</button>
+      <button id="table_button2" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-500" onclick="showTables(1)" data-act-class="tab-active" class="tab">School</button>
+      <button id="table_button3" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-500" onclick="showTables(2)" data-act-class="tab-active" class="tab">Frontend</button>
+      <button id="table_button4" class="table_button rounded-md px-4 py-2 hover:bg-secondary hover:text-black transition duartion-500" onclick="showTables(3)" data-act-class="tab-active" class="tab">Backend</button>
     </div>
     </div>
     </div>
 
-    <div id="test" class="mx-auto">
-
+    <div class="grid place-items-center ">
+      <div id="link-box" class="bg-base-200 rounded-2xl m-4 max-w-7xl justify-center flex flex-row ">
+        <ul id="ul0" class="menu bg-base-200 w-56 rounded-box">
+          <li id="test0"></li>
+        </ul>
+        <ul id="ul1" class="menu bg-base-200 w-56 rounded-box">
+          <li id="test1"></li>
+        </ul>
+        <ul id="ul2" class="menu bg-base-200 w-56 rounded-box">
+          <li id="test2"></li>
+        </ul>
+        <ul id="ul3" class="menu bg-base-200 w-56 rounded-box">
+          <li id="test3"></li>
+        </ul>
+      </div>
     </div>
+   
 
-    <div class="dropdown dropdown-hover">
-      <div tabindex="0" role="button" class="btn m-1">Hover</div>
-      <ul tabindex="0" class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52">
-        <li> <button data-set-theme="catppuccin-latte">Latté</button></li>
-        <li> <button data-set-theme="catppuccin-frappe">Frappé</button></li>
-        <li> <button data-set-theme="catppuccin-macchiato">Macchiato</button></li>
-        <li> <button data-set-theme="catppuccin-mocha">Mocha</button></li>
-      </ul>
-    </div>
     
+    <a href="https://www.google.com" class="btn btn-ghost">Google</a> 
   </body>
   <script src="src_js/time.js"></script>
   <script src="src_js/serch.js"></script>

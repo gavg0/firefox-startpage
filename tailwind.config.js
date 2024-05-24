@@ -2,7 +2,13 @@
 module.exports = {
   content: ["./**/*.{html,js}"],
   theme: {
-    extend: {},
+    extend: {
+      //max width 9xl
+      maxWidth: {
+        '9xl': 'rem',
+      },
+
+    },
   },
   plugins: [
     require('daisyui'),
