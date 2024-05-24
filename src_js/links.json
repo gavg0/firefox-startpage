@@ -1,22 +1,182 @@
 [
     {
-      "title": "Title 0",
-      "link": "Link 0",
+      "title": "Google",
+      "link": "https://www.google.com",
       "table": 0
     },
     {
-      "title": "Title 1",
-      "link": "Link 1",
-      "table": 1    
+      "title": "Youtube",
+      "link": "https://www.youtube.com",
+      "table": 0
     },
     {
-      "title": "Title 2",
-      "link": "Link 2",
+      "title": "Discord",
+      "link": "https://discord.com",
+      "table": 0
+    },
+    {
+      "title": "Twitter",
+      "link": "https://twitter.com",
+      "table": 0
+    },
+    {
+      "title": "Daisy UI",
+      "link": "https://daisyui.com",
+      "table": 0
+    },
+    {
+      "title": "ChatGPT",
+      "link": "https://chat.openai.com",
+      "table": 0
+    },
+    {
+      "title": "Gemini",
+      "link": "https://gemini.com",
+      "table": 0
+    },
+    {
+      "title": "Tailwind CSS",
+      "link": "https://tailwindcss.com",
+      "table": 0
+    },
+    {
+      "title": "OpenAI",
+      "link": "https://openai.com",
+      "table": 0
+    },
+    {
+      "title": "Coinbase",
+      "link": "https://coinbase.com",
+      "table": 0
+    },
+    {
+      "title": "Binance",
+      "link": "https://binance.com",
+      "table": 0
+    },
+    {
+      "title": "Uniswap",
+      "link": "https://uniswap.org",
+      "table": 0
+    },
+    {
+      "title": "MetaMask",
+      "link": "https://metamask.io",
+      "table": 0
+    },
+    {
+      "title": "Etherscan",
+      "link": "https://etherscan.io",
+      "table": 0
+    },
+    {
+      "title": "CoinGecko",
+      "link": "https://coingecko.com",
+      "table": 0
+    },
+    {
+      "title": "CoinMarketCap",
+      "link": "https://coinmarketcap.com",
+      "table": 0
+    },
+    {
+      "title": "CoinTelegraph",
+      "link": "https://cointelegraph.com",
+      "table": 0
+    },
+    {
+      "title": "CoinDesk",
+      "link": "https://coindesk.com",
+      "table": 0
+    },
+    {
+      "title": "CryptoPanic",
+      "link": "https://cryptopanic.com",
+      "table": 0
+    },
+    {
+      "title": "CryptoSlate",
+      "link": "https://cryptoslate.com",
+      "table": 0
+    },
+    {
+      "title": "CryptoCompare",
+      "link": "https://cryptocompare.com",
+      "table": 0
+    },
+    {
+      "title": "CoinMarketCal",
+      "link": "https://coinmarketcal.com",
+      "table": 0
+    },
+    {
+      "title": "CoinCodex",
+      "link": "https://coincodex.com",
+      "table": 0
+    },
+    {
+      "title": "Coin360",
+      "link": "https://coin360.com",
+      "table":  0
+    },
+    {
+      "title": "GitHub",
+      "link": "https://github.com",
       "table": 1
     },
     {
-      "title": "Title 3",
-      "link": "Link 3",
+      "title": "Stack Overflow",
+      "link": "https://stackoverflow.com",
+      "table": 1
+    },
+    {
+      "title": "Visual Studio Code",
+      "link": "https://code.visualstudio.com",
+      "table": 1
+    },
+    {
+      "title": "MDN Web Docs",
+      "link": "https://developer.mozilla.org",
+      "table": 1
+    },
+    {
+      "title": "W3Schools",
+      "link": "https://www.w3schools.com",
       "table": 2
+    },
+    {
+      "title": "Medium",
+      "link": "https://medium.com",
+      "table": 2
+    },
+    {
+      "title": "Dev.to",
+      "link": "https://dev.to",
+      "table": 2
+    },
+    {
+      "title": "FreeCodeCamp",
+      "link": "https://www.freecodecamp.org",
+      "table": 2
+    },
+    {
+      "title": "Mozilla Developer Network",
+      "link": "https://developer.mozilla.org",
+      "table": 3
+    },
+    {
+      "title": "Google Developers",
+      "link": "https://developers.google.com",
+      "table": 3
+    },
+    {
+      "title": "Microsoft Developer Network",
+      "link": "https://developer.microsoft.com",
+      "table": 3
+    },
+    {
+      "title": "Python Documentation",
+      "link": "https://docs.python.org",
+      "table": 3
     }
   ]
