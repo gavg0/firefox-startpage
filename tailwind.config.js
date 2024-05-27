@@ -15,6 +15,9 @@ module.exports = {
   ],
   daisyui: {
     themes: [
+        //Here you can add your Theme from the DaisyUI themes like this:    "cupcake", "bumblebee",
+        //https://daisyui.com/docs/themes/
+      
       {
         "catppuccin-latte": {
           primary: "#1e66f5", // blue
@@ -59,7 +62,9 @@ module.exports = {
           success: "#a6e3a1", // green
           warning: "#f9e2af", // yellow
           error: "#f38ba8", // red
-        },
+        },  
+        //Here you can add your custom theme and give it a name
+        
       },
     ],
   },

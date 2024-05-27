@@ -1,3 +1,5 @@
+
+/*
 window.addEventListener('keypress', function(e){
     if (e.key === 'f') {
         searchedWindow = window.open("https://www.w3schools.com", "_blank");
@@ -8,3 +10,4 @@ window.addEventListener('keypress', function(e){
         window.open("https://www.google.com", "_blank");
     }
 }, false);
+*/
